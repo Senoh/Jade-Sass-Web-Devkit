@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     uglify: {
       js: {
         files: {
-          'assets/load/main.min.js': ['assets/build/js/main.js',]
+          'assets/load/js/main.min.js': ['assets/build/js/main.js',]
         }
       }
     },
@@ -55,7 +55,7 @@ module.exports = function(grunt) {
       },
       cssmin: {
         files: ['assets/build/css/*.css'],
-        tasks: ['cssmin:css'],
+        tasks: ['cssmin'],
       },
       jade: {
         files: ['assets/raw/jade/index.jade'],
